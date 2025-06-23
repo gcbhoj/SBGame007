@@ -1,0 +1,170 @@
+<!-- Modified By NANDITA BADHWAR -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game - Introduction</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container that holds the content */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f1c40f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Description and How to Play sections */
+        #description,
+        #howToPlay {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p,
+        ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #bdc3c7;
+        }
+
+        ul {
+            list-style-position: outside;
+            text-align: left;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Button styling */
+        .btn-start {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-start:hover {
+            background-color: #2ecc71;
+            transform: translateY(-3px);
+        }
+
+        .btn-start:focus {
+            outline: none;
+        }
+
+        /* Animation for the intro section */
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .btn-start {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to Memory Game</h1>
+        <p>This is a memory card matching game that helps improve your memory and concentration.</p>
+
+        <div id="description">
+            <h2>Description</h2>
+            <p>The objective of the game is to find matching pairs of cards. As you progress, your memory and attention
+                to detail will improve.</p>
+        </div>
+
+        <div id="howToPlay">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Click on a card to reveal its image.</li>
+                <li>Match the image card with the corresponding word card.</li>
+                <li>If the match is correct, both cards will stay revealed.</li>
+                <li>If the match is incorrect, both cards will flip back after a brief delay.</li>
+                <li>Try to match all pairs with the least number of wrong moves and in the shortest time.</li>
+                <li>Once all pairs are matched, you win the game!</li>
+            </ul>
+
+        </div>
+
+        <button class="btn-start" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        function startGame() {
+            // Redirect to mmk.html
+            window.location.href = 'mmk.html';
+        }
+    </script>
+
+</body>
+
+</html>
